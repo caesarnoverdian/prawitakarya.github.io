@@ -1,0 +1,331 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: #000;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.navbar .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar nav a {
+  color: white;
+  margin-left: 25px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.logo img {
+  height: 40px;
+  vertical-align: middle;
+}
+/* Hero Section */
+.hero {
+  background: url('../img/homelfits1.png') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+  position: relative;
+  max-width: 600px;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 40px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  font-weight: 600;
+}
+
+.hero p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-primary {
+  padding: 12px 20px;
+  background: #00008B;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.btn-outline {
+  padding: 12px 20px;
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* WhatsApp Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #25D366;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  z-index: 100;
+}
+
+.whatsapp-float img {
+  width: 32px;
+  height: 32px;
+}
+
+.hero-secondary {
+  background: url('assets/img/hero2-bg.jpg') no-repeat center center/cover;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-secondary::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgb(255, 255, 255);
+  z-index: 1;
+}
+
+.hero2-content {
+  position: relative;
+  z-index: 2;
+  color: #01016F;
+  max-width: 800px;
+}
+
+.hero2-content h2 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero2-content h2 span {
+  font-weight: bold;
+}
+
+.hero2-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #01016F(0, 9%, 55%);
+}
+
+.responsibility-section {
+  background: url('assets/img/responsibility-bg.jpg') no-repeat center center/cover;
+  padding: 80px 40px;
+  color: #01016F;
+  position: relative;
+}
+
+.responsibility-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgb(252, 251, 251); /* overlay putih */
+  z-index: 1;
+}
+
+.responsibility-section > * {
+  position: relative;
+  z-index: 2;
+}
+
+.section-title, .cards {
+  text-align: center;
+  margin-top: 40px;
+}
+
+
+.responsibility-section .container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.text-left, .text-right {
+  flex: 1 1 45%;
+}
+
+.text-left h2 {
+  font-size: 42px;
+  line-height: 1.3;
+}
+
+.text-left h2 span {
+  font-weight: bold;
+}
+
+.text-right p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #01016F;
+}
+
+.responsibility-section .container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* posisikan ke tengah */
+  align-items: center;
+  gap: 60px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.center-text {
+  margin-top: 40px;
+  text-align: center;
+  color: #01016F;
+}
+
+.center-text p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.center-text h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #01016F;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 40px 0 20px;
+  color: #01016F;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 20px 60px;
+}
+
+.card {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.card p {
+  font-weight: bold;
+  padding: 15px 10px;
+  margin: 0;
+  color: #01016F;
+}
+
+.stats-section {
+  background-color: #5e615e; /* sesuai tampilan gambar */
+  padding: 50px 20px;
+  color: white;
+  text-align: center;
+  border-bottom: 2px solid #00008B;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 80px; /* tambahkan jarak antar kotak statistik */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.stat-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 180px;
+}
+
+.stat-box h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.stat-box p {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.underline {
+  width: 60px;
+  height: 4px;
+  background-color: #bbb;
+}
