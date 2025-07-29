@@ -392,41 +392,55 @@ body {
 }
 
 .commit-section {
-  background-color: #000080; /* Navy blue */
-  color: #fff;
-  padding: 60px 20px;
-  text-align: center;
+  background-color: #000080;
+  color: white;
+  padding: 80px 20px;
 }
 
-.commit-section h2 {
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 20px;
+.commit-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.commit-section h2 span {
+.commit-text {
+  max-width: 600px;
+  text-align: right;
+  padding-right: 40px;
+}
+
+.commit-text h2 {
   font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.commit-text h2 span {
+  font-size: 36px;
+  font-weight: 800;
   display: block;
 }
 
-.commit-section p {
+.commit-text p {
   font-size: 16px;
-  max-width: 700px;
-  margin: 0 auto 30px auto;
   line-height: 1.6;
+  margin-bottom: 30px;
 }
 
-.btn-outline {
+.commit-btn {
   display: inline-block;
   padding: 10px 20px;
-  color: #fff;
-  border: 2px solid #fff;
+  color: white;
+  border: 2px solid white;
   border-radius: 5px;
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: 0.3s;
 }
 
-.btn-outline:hover {
-  background-color: #fff;
+.commit-btn:hover {
+  background-color: white;
   color: #000080;
 }
