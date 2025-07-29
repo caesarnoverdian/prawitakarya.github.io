@@ -390,3 +390,43 @@ body {
   /* Ini akan mengubah warna hitam jadi biru navy (#000080) */
   margin-bottom: 10px;
 }
+
+.commit-section {
+  background-color: #000080; /* Navy blue */
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.commit-section h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.commit-section h2 span {
+  font-size: 32px;
+  display: block;
+}
+
+.commit-section p {
+  font-size: 16px;
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+  line-height: 1.6;
+}
+
+.btn-outline {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background-color: #fff;
+  color: #000080;
+}
