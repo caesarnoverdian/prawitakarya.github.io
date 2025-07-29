@@ -384,8 +384,9 @@ body {
 }
 
 .why-icon {
-  width: 40px;
-  height: auto;
-  fill: #000080; /* biru navy */
+  width: 50px;
+  height: 50px;
   filter: invert(13%) sepia(94%) saturate(1197%) hue-rotate(204deg) brightness(93%) contrast(102%);
+  /* Ini akan mengubah warna hitam jadi biru navy (#000080) */
+  margin-bottom: 10px;
 }
