@@ -382,3 +382,10 @@ body {
   font-size: 15px;
   line-height: 1.4;
 }
+
+.why-icon {
+  width: 40px;
+  height: auto;
+  fill: #000080; /* biru navy */
+  filter: invert(13%) sepia(94%) saturate(1197%) hue-rotate(204deg) brightness(93%) contrast(102%);
+}
